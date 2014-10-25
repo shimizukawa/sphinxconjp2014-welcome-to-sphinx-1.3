@@ -12,8 +12,7 @@ Welcome to Sphinx-1.3
 
 .. figure:: images/face.png
 
-http://about.me/shimizukawa, @shimizukawa
-
+@shimizukawa
 
 * Sphinxの共同メンテナ (2011-)
 * Sphinx-Users JP 2014 副会長/会計
@@ -31,12 +30,13 @@ http://about.me/shimizukawa, @shimizukawa
 
 .. s6:: styles
 
+   'p': {fontSize:'110%'},
    'div[0]': {width:'15%', position:'absolute', top:'0', right:'1em'},
-   'ul': {fontSize:'70%'},
+   'ul/li': {fontSize:'70%', lineHeight:'1.2em'},
    'ul/li[2]/ul': {display:'none'},
-   'div[1]': {width:'23%', position:'absolute', bottom:'0', left:'1em'},
-   'div[2]': {width:'23%', position:'absolute', bottom:'0', left:'6.5em'},
-   'div[3]': {width:'23%', position:'absolute', bottom:'0', right:'1em'},
+   'div[1]': {width:'23%', position:'absolute', bottom:'0.5em', left:'1em'},
+   'div[2]': {width:'23%', position:'absolute', bottom:'0.5em', left:'6.5em'},
+   'div[3]': {width:'23%', position:'absolute', bottom:'0.5em', right:'1em'},
 
 .. s6:: effect slide
 
@@ -232,31 +232,33 @@ New 5: any ロール
 ======================================
 
 * ロール無指定で良い感じに探してリンク
-* ``:ref:`link-to``` を ```link-to``` と書ける
+* ``:ref:`link-to``` を ``:any:`link-to``` と書ける
+* ``default-role`` を使えば ``:any:`` を省略可能
 
 .. code-block:: rst
    :caption: これまで
 
-   ページ :doc:`install` の :ref:`install-to-windows`
+   :rst:dir:`code-block` について詳しくは、
+   ページ :doc:`directives` の :ref:`code-example`
    を参照してください。
 
 .. code-block:: rst
    :caption: any利用
 
-   .. default-role:: any
-
-   ページ `install` の `install-to-windows`
+   `code-block` について詳しくは、
+   ページ `directives` の `code-example`
    を参照してください。
 
 .. s6:: styles
 
-   'ul/li': {display:'none'},
+   'ul/li': {display:'none', fontSize:'80%', lineHeight:'1.2em'},
    'div': {display:'none', fontSize:'80%'},
 
 .. s6:: actions
 
    ['ul/li[0]', 'fade in', '0.3'],
    ['ul/li[1]', 'fade in', '0.3'],
+   ['ul/li[2]', 'fade in', '0.3'],
    ['div[0]', 'fade in', '0.3'],
    ['div[1]', 'fade in', '0.3'],
 
@@ -491,24 +493,28 @@ New 11: 開発者向け
 ========
 
 * Sphinx-1.3b1 が出たよ
-* 日本人いっぱい貢献してる
 * 新機能が盛りだくさん！
-
-動作確認＆バグレポをお待ちしております！
-   * `Sphinx-users.jp ML`_
-   * #sphinxjp
-
-.. _Sphinx-users.jp ML: http://sphinx-users.jp/howtojoin.html#id11
+* まずは使ってみてください **(重要)**
 
 .. s6:: styles
 
    'ul/li': {display:'none'},
-   'dl': {display:'none'},
 
 .. s6:: actions
 
    ['ul/li[0]', 'fade in', '0.3'],
    ['ul/li[1]', 'fade in', '0.3'],
    ['ul/li[2]', 'fade in', '0.3'],
-   ['dl[0]', 'fade in', '0.3'],
+
+感想＆バグレポをお待ちしております！
+======================================================
+
+* `Sphinx-users.jp ML`_
+* #sphinxjp
+
+.. _Sphinx-users.jp ML: http://sphinx-users.jp/howtojoin.html#id11
+
+.. s6:: styles
+
+   'h2': {textAlign:'center', marginTop:'20%', fontSize:'100%', background:'none'}
 
