@@ -32,14 +32,15 @@ body,
 .s6.sphinx .page.default > ol,
 .s6.sphinx .page.default > ul,
 .s6.sphinx .page.default > ul > li {
-	margin: 0.5em;
+	margin: 0.8em;
 }
 
 .s6.sphinx .page.default > dl {
-    margin: 0.5em auto;
+    margin: 1em auto;
 }
 
 .s6.sphinx .page.default dt {
+    margin-top: 1em;
     font-weight: bold;
 }
 

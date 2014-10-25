@@ -30,9 +30,9 @@ Welcome to Sphinx-1.3
 
 .. s6:: styles
 
-   'p': {fontSize:'110%'},
+   'p': {fontSize:'100%'},
    'div[0]': {width:'15%', position:'absolute', top:'0', right:'1em'},
-   'ul/li': {fontSize:'70%', lineHeight:'1.2em'},
+   'ul/li': {fontSize:'70%', margin:'0'},
    'ul/li[2]/ul': {display:'none'},
    'div[1]': {width:'23%', position:'absolute', bottom:'0.5em', left:'1em'},
    'div[2]': {width:'23%', position:'absolute', bottom:'0.5em', left:'6.5em'},
@@ -87,7 +87,7 @@ Docutils:
 
 .. s6:: styles
 
-   'ul/li': {display:'none'}
+   'ul/li': {display:'none', fontSize:'95%'}
 
 .. s6:: actions
 
@@ -284,7 +284,7 @@ New 6: コードのキャプション
 
 .. s6:: styles
 
-   'ul/li': {margin:'0', display:'none'},
+   'ul/li': {margin:'0.4em', display:'none'},
    'div': {fontSize:'80%', display:'none'},
 
 .. s6:: actions
@@ -316,7 +316,7 @@ New 7: numfig
 
 .. s6:: styles
 
-   'ul/li': {margin:'0', display:'none'},
+   'ul/li': {margin:'0.4em', display:'none'},
    'div': {fontSize:'80%', display:'none'},
 
 .. s6:: actions
@@ -348,6 +348,7 @@ New 8: literalinclude
 
 .. s6:: styles
 
+   'ul': {fontSize:'70%'},
    'ul/li': {display:'none'},
 
 .. s6:: actions
@@ -393,6 +394,7 @@ New 10: 多言語
 
 .. s6:: styles
 
+   'ul': {fontSize:'75%'},
    'ul/li': {display:'none'},
 
 .. s6:: actions
@@ -484,8 +486,9 @@ New 11: 開発者向け
 
 .. s6:: styles
 
+   'ul/li': {fontSize:'90%'},
    'ul/li/ul/li': {fontSize:'60%', lineHeight:'1em'},
-   'p': {fontSize:'60%', float:'right'},
+   'p': {fontSize:'60%', float:'right', margin:'0'},
 
 .. s6:: effect slide
 
@@ -506,8 +509,11 @@ New 11: 開発者向け
    ['ul/li[1]', 'fade in', '0.3'],
    ['ul/li[2]', 'fade in', '0.3'],
 
-感想＆バグレポをお待ちしております！
+さいごに
 ======================================================
+
+| 感想＆バグレポ
+| お待ちしております！
 
 * `Sphinx-users.jp ML`_
 * #sphinxjp
@@ -516,5 +522,9 @@ New 11: 開発者向け
 
 .. s6:: styles
 
-   'h2': {textAlign:'center', marginTop:'20%', fontSize:'100%', background:'none'}
+   'h2': {display:'none'},
+   'div': {textAlign:'center', marginTop:'10%', fontSize:'140%'},
+   'ul': {marginLeft:'20%', listStyle:'none'},
+   'ul/li': {lineHeight:'1em'},
+
 
