@@ -60,18 +60,6 @@ Sphinx-1.3b1 リリース
 
 .. s6:: effect slide
 
-開発に貢献してくれた日本人
-===========================
-
-* 小宮健(@tk0miya)
-* 若山しろう(@r_rudi)
-* 熊谷章治(@shkumagai)
-* 渋川よしき(@shibu_jp)
-
-※ アカウントが分かる範囲です
-
-.. s6:: effect slide
-
 Sphinx-1.3サポートバージョン
 ==============================
 
@@ -140,8 +128,6 @@ New 1: sphinx-build
 
 New 2: sphinx-quickstart
 =============================================
-
-by *@r_rudi*
 
 * ほぼ全ての設定をコマンドオプションで指定可能
 * ``--quiet`` オプションでWizard省略
@@ -276,10 +262,8 @@ New 5: any ロール
 
 .. s6:: effect slide
 
-New 6: キャプション
-========================================
-
-by *@tk0miya*
+New 6: コードのキャプション
+==========================================
 
 * 対象: ``code-block`` と ``literalinclude``
 * 追加: ``:caption:`` オプション
@@ -312,8 +296,6 @@ by *@tk0miya*
 
 New 7: numfig
 ========================================
-
-by *@tk0miya*
 
 * 対象: 画像,テーブル,コードに採番表示
 * 設定: conf.pyに ``numfig = True``
@@ -355,7 +337,7 @@ New 8: literalinclude
 
   * ``:lines:`` で一部の行指定でコードを表示すると、行番号を1から表示していた
 
-* ``diff`` オプションで差分表示 *(@r_rudi)*
+* ``diff`` オプションで差分表示
 
   .. code-block:: rst
 
@@ -377,8 +359,6 @@ New 8: literalinclude
 New 9: bizstyle HTMLテーマ
 ==================================================
 
-by *@shkumagai*
-
 * ``bizstyle`` テーマを内蔵
 
   .. figure:: images/bizstyle.png
@@ -397,9 +377,10 @@ by *@shkumagai*
 New 10: 多言語
 ======================================
 
-* 14言語でステミングサポート *(@shibu_jp)*
+* 14言語でステミングサポート
 
   * 単語の三人称単数や複数形等を正規化
+  * 英語は対応されていた、日本語は無関係
 
 * ``*.po`` 更新で ``*.mo`` を自動的にビルド
 
@@ -423,7 +404,7 @@ New 10: 多言語
 New 11: 開発者向け
 ======================================
 
-* ``app.add_latex_package()`` API追加 *(@tk0miya)*
+* ``app.add_latex_package()`` API追加
 
   * LaTeX出力を調整する拡張を作りやすくなる
 
@@ -453,7 +434,7 @@ New 11: 開発者向け
 ===========================
 
 * C++ ドメインが書き直され多くのバグが修正
-* singlehtmlでセクション番号が壊れる問題を修正 *(@tk0miya)*
+* singlehtmlでセクション番号が壊れる問題を修正
 * ``make.bat latexpdf`` 実行でディレクトリが変わる問題を修正
 
 他、全部で **27個** のバグ修正
@@ -475,6 +456,34 @@ New 11: 開発者向け
   * `SphinxInstaller-1.3b1.20141014-py2.7-win32.zip`_
 
 .. _SphinxInstaller-1.3b1.20141014-py2.7-win32.zip: http://sphinx-users.jp/gettingstarted/install_windows_standalone.html
+
+.. s6:: effect slide
+
+開発に貢献してくれた日本人
+===========================
+
+* 小宮健(@tk0miya):
+
+  * code-blockのキャプション, numfig, app.add_latex_package(), LaTeX出力でcode-blockの枠線, 10個のバグ修正
+
+* 若山しろう(@r_rudi):
+
+  * sphinx-quickstartのコマンドラインオプション, literalincludeのdiffオプション
+
+* 熊谷章治(@shkumagai):
+
+  * bizstyle HTMLテーマ
+
+* 渋川よしき(@shibu_jp):
+
+  * 14言語でステミングサポート
+
+*※アカウントが分かる範囲です*
+
+.. s6:: styles
+
+   'ul/li/ul/li': {fontSize:'60%', lineHeight:'1em'},
+   'p': {fontSize:'60%', float:'right'},
 
 .. s6:: effect slide
 
